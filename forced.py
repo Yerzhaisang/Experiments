@@ -11,7 +11,7 @@ print("Hello!")
 onlyfiles = [f for f in os.listdir(sqlpath) if os.path.isfile(os.path.join(sqlpath, f))]
 onlyfiles.sort()
 
-n_epochs=100
+n_epochs=50
 
 if len(sys.argv) > 1:
     onlyfiles = sys.argv[1:]
