@@ -10,7 +10,7 @@ sqlpath = "/home/yerzh/comp1/queries/"
 print("Hello!")
 onlyfiles = [f for f in os.listdir(sqlpath) if os.path.isfile(os.path.join(sqlpath, f))]
 
-n_epochs=25
+n_epochs=12
 
 if len(sys.argv) > 1:
     onlyfiles = sys.argv[1:]
@@ -144,4 +144,3 @@ except psycopg2.DatabaseError as error:
 finally:
     if conn is not None:
         conn.close()
-
